@@ -42,6 +42,8 @@ Repeat the above series of steps with the "Test" data, terminating in:
 
 ###Creat summary of Mean of mean() & std() variables from **humanactivitylog** per Subect/Activity pair
 
-
+Using dplyr package:
+**dplygroup**  <-- group **humanactivitylog**   by both SubjectId and Activity
+**humanactivitylogsummary**  <-- summarize_each **dplygroup** by mean()
  
 
