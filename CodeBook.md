@@ -16,7 +16,7 @@ subject_train.txt  vector of subject IDs that correspond to X_train
 ###Process and **Variables**:
 
 **var_labels**   <-  Read in variable label file (features.txt)  
-activity_labels**  <-  Read in activity label file (activity_labels.txt)  
+**activity_labels**  <-  Read in activity label file (activity_labels.txt)  
   Add appropriate Names/header
   
 ###Training set of Data:  
@@ -25,18 +25,23 @@ activity_labels**  <-  Read in activity label file (activity_labels.txt)
 **subjecttrain** <-  Read in training subject vector (subject_train.txt)  
   Add appropriate Names/header
 
-ytrain2   <-  Merge/transform ytrain with activity_labels, creating vector of Labels, *not* codes
-training  <- cbind all three files into one
+**ytrain2**   <-  Merge/transform ytrain with activity_labels, creating vector of Labels, *not* codes  
+**training**  <- cbind all three files into one  
 
-lv <- Generate logical vector of Columns/headers that are only mean() or std(), as well as Activity and Subject ID columns
-trainmeanstd <- extract from training with lv 
+**lv** <- Generate logical vector of Columns that are only mean() or std() & Activity & Subject ID columns  
+**trainmeanstd** <- extract from **training** with **lv**  
+
 
 ### Testing set of Data
-Repeat the above series of steps with the "Test" data, terminating in:
-testmeanstd
+Repeat the above series of steps with the "Test" data, terminating in:  
+**testmeanstd**
 
 ###Combine test and training data: 
 
-humanactivitylog <-  rbind testmeanstd & trainmeanstd
+**humanactivitylog** <-  rbind **testmeanstd** & **trainmeanstd**
+
+###Creat summary of Mean of mean() & std() variables from **humanactivitylog** per Subect/Activity pair
+
+
  
 
