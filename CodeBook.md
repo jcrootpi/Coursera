@@ -13,16 +13,16 @@ features.txt  Lables for 560 variables
 subject_test.txt  vector of subject IDs that correspond to X_test  
 subject_train.txt  vector of subject IDs that correspond to X_train  
 
-###Process and Variables:
+###Process and **Variables**:
 
-var_labels   <-  Read in variable label file (features.txt)  
-activity_labels  <-  Read in activity label file (activity_labels.txt)
+**var_labels**   <-  Read in variable label file (features.txt)  
+activity_labels**  <-  Read in activity label file (activity_labels.txt)  
   Add appropriate Names/header
   
-###Training set of Data:
-Xtrain  <- Read in training data (X_train.txt)
-ytrain  <- Read in training activity vector (y_train.txt)
-subjecttrain <-  Read in training subject vector (subject_train.txt)
+###Training set of Data:  
+**Xtrain**  <- Read in training data (X_train.txt)  
+**ytrain**  <- Read in training activity vector (y_train.txt)  
+**subjecttrain** <-  Read in training subject vector (subject_train.txt)  
   Add appropriate Names/header
 
 ytrain2   <-  Merge/transform ytrain with activity_labels, creating vector of Labels, *not* codes
