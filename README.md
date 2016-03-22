@@ -4,20 +4,13 @@ Get Data from : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FU
 
 Copy the following files from the unzipped data set to your appropriate R working folder:
 
-y_train.txt
-
-X_train.txt
-
-y_test.txt
-
-X_test.txt
-
-activity_labels.txt
-
-features.txt
-
-subject_test.txt
-
+y_train.txt  
+X_train.txt  
+y_test.txt  
+X_test.txt  
+activity_labels.txt  
+features.txt  
+subject_test.txt  
 subject_train.txt
 
 run run_analysis.R  script
